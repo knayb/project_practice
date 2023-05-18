@@ -22,7 +22,7 @@ int main()
 	cout << "Что вы хотите выполнить?\n";
 	cout << "0 - Подсчитать количество слов в тексте\n";
 	cout << "1 - проверить, есть ли в тексте заданное слово\n";
-	//cout << "2 - поменять местами два слова текста с заданными номерами\n";
+	cout << "2 - поменять местами два слова текста с заданными номерами\n";
 	//cout << "3 - вставить новое слово после указанного\n";
 
 	int cmd;
@@ -63,27 +63,27 @@ int main()
 		//Конец работы программы
 		break;
 	}
-	//case 2:
-	//{
-	//	cout << "Введите номера двух слов: ";
+	case 2:
+	{
+		cout << "Введите номера двух слов: ";
 
-	//	//Создаём переменные, хранящие номера двух слов
-	//	int first_idx, second_idx;
+		//Создаём переменные, хранящие номера двух слов
+		int first_idx, second_idx;
 
-	//	//Вводим номера двух слов
-	//	cin >> first_idx >> second_idx;
+		//Вводим номера двух слов
+		cin >> first_idx >> second_idx;
 
-	//	//Меняем два слова местами
-	//	string first_word = words[first_idx];
-	//	words[first_idx] = words[second_idx];
-	//	words[second_idx] = first_word;
+		//Меняем два слова местами
+		string first_word = words[first_idx];
+		words[first_idx] = words[second_idx];
+		words[second_idx] = first_word;
 
-	//	//Вывод всех слов
-	//	for (string word : words) cout << word << " ";
+		//Вывод всех слов
+		for (string word : words) cout << word << " ";
 
-	//	//Конец работы программы
-	//	break;
-	//}
+		//Конец работы программы
+		break;
+	}
 	//case 3:
 	//{
 	//	cout << "Введите номер слова, после которого хотите вставить слово: ";
